@@ -66,7 +66,7 @@ run().catch(console.dir);
 
 
 app.get('/', (req, res) => {
-    res.send('Ema-John is running to get connected with the server');
+    res.send('Ema-John is running');
 })
 
 app.listen(port, () => {
