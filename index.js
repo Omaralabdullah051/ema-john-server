@@ -6,7 +6,13 @@ require('dotenv').config();
 
 //*middleware
 const cors = require('cors');
-app.use(cors());
+const corsConfig = {
+    origin: true,
+    credentials: true,
+};
+app.use(cors(corsConfig))
+// app.use(cors());
+app.options('*', corsConfig);
 app.use(express.json());
 
 
